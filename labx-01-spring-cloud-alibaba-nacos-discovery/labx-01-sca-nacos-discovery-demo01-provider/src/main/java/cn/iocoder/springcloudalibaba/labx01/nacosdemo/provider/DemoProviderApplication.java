@@ -19,6 +19,7 @@ public class DemoProviderApplication {
 
         @GetMapping("/echo")
         public String echo(String name) {
+            System.out.println("name:"+name);
             return "provider:" + name;
         }
 
